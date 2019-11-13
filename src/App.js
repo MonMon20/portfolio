@@ -1,7 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import AboutMe from './aboutme.jpg'
+import cv from './cv.jpg'
+import hobbies from './hobbies.jpg'
+import projects from './Projects.jpg'
+import contact from './Contact.jpg'
+import socialMedia from './social.jpg'
 function App() {
   return (
     <div className="App">
@@ -17,15 +21,28 @@ function App() {
           </ul>
         </nav>
         <main>
-          <section>
+          <section className="sectionContainer">
           <div className='sectionItem'>
            <img src= {AboutMe} alt='' />
+           <h1>About me</h1>
          </div>
          <div className='sectionItem'>
-           <img src= {AboutMe} alt='' />
+           <img src= {socialMedia} alt='' />
          </div> 
          <div className='sectionItem'>
-           <img src= {AboutMe} alt='' />
+           <img src= {cv} alt='' />
+         </div>
+          </section>
+          <section className="sectionContainer">
+          <div className='sectionItem'>
+           <img src= {projects} alt='' />
+           <h1>About me</h1>
+         </div>
+         <div className='sectionItem'>
+           <img src= {hobbies} alt='' />
+         </div> 
+         <div className='sectionItem'>
+           <img src= {contact} alt='' />
          </div>
           </section>
         </main>
